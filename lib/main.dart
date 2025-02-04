@@ -7,7 +7,7 @@ import 'package:getxcourse/view/home.dart';
 void main() {
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    home: HomeScreen(), // الشاشة الأولى عند فتح التطبيق
+    home: HomeScreen(),
     getPages: [
       GetPage(name: '/', page: () => HomeScreen()),
       GetPage(name: '/details', page: () => DetailsScreen()),
