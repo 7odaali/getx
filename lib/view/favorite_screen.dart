@@ -31,9 +31,7 @@ class FavoriteScreen extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12),
                       child: Image.network(product.image ?? "",
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover),
+                          width: 100, height: 100, fit: BoxFit.cover),
                     ),
                     const SizedBox(width: 8),
                     Expanded(
@@ -47,7 +45,8 @@ class FavoriteScreen extends StatelessWidget {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                           const SizedBox(height: 8),
-                          Text("\$${product.price?.toStringAsFixed(2) ?? "0.00"}"),
+                          Text(
+                              "\$${product.price?.toStringAsFixed(2) ?? "0.00"}"),
                         ],
                       ),
                     ),
