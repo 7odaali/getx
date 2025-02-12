@@ -23,41 +23,41 @@ class Pageone extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    padding:EdgeInsets.symmetric(horizontal: 20),
-                    child: IconButton(
-                      onPressed: () {
-                        controller.incrementOne();
-                      },
-                      icon: const Icon(
-                        Icons.add,
-                        size: 40,
-                      ),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: IconButton(
+                    onPressed: () {
+                      controller.incrementOne();
+                    },
+                    icon: const Icon(
+                      Icons.add,
+                      size: 40,
                     ),
                   ),
-                  Center(
-                    child:GetBuilder<HomeController>(builder: (controller) =>
-                        Text(
-                      "${controller.count1}",
-                      style: TextStyle(fontSize: 20),
+                ),
+                Center(
+                    child: GetBuilder<HomeController>(
+                  builder: (controller) => Text(
+                    "${controller.count1}",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                )),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: IconButton(
+                    onPressed: () {
+                      controller.decrementOne();
+                    },
+                    icon: const Icon(
+                      Icons.remove,
+                      size: 40,
                     ),
-                    )),
-                  Container(
-                    padding:EdgeInsets.symmetric(horizontal: 20),
-                    child: IconButton(
-                      onPressed: () {
-                        controller.decrementOne();
-                      },
-                      icon: const Icon(
-                        Icons.remove,
-                        size: 40,
-                      ),
-                    ),
-                  )
-                ],
-              ),
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
