@@ -26,7 +26,7 @@ class Pageone extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: IconButton(
                     onPressed: () {
                       controller.incrementOne();
@@ -41,11 +41,11 @@ class Pageone extends StatelessWidget {
                     child: GetBuilder<HomeController>(
                   builder: (controller) => Text(
                     "${controller.count1}",
-                    style: TextStyle(fontSize: 20),
+                    style: const TextStyle(fontSize: 20),
                   ),
                 )),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: IconButton(
                     onPressed: () {
                       controller.decrementOne();
