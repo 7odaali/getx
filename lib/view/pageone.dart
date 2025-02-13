@@ -34,8 +34,7 @@ class Pageone extends StatelessWidget {
                     icon: const Icon(
                       Icons.add,
                       size: 40,
-                    ),
-                  ),
+                    ),),
                 ),
                 Center(
                     child: GetBuilder<HomeController>(
