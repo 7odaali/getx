@@ -7,7 +7,6 @@ class Prefs {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_key, lang);
   }
-
   static Future<String> getLang() async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getString(_key) ?? 'en';
