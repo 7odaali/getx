@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getxcourse/view/pageone.dart';
-import 'package:getxcourse/view/pagethree.dart';
 import '../controller/homecontroller.dart';
 
 class Pagefour extends StatefulWidget {
@@ -56,7 +54,7 @@ class _PagefourState extends State<Pagefour> {
           ),
           Center(
             child: MaterialButton(
-              color: Colors.red, 
+              color: Colors.red,
               textColor: Colors.white,
               onPressed: () {
                 widget.extcontroller.incrementOne();
